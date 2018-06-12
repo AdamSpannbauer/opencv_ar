@@ -10,8 +10,9 @@ Find a `query_image` in a `target_image` and do best to replace found query with
 
 `query_image`                | `target_image`                 | `ar_image`
 :---------------------------:|:------------------------------:|:--------------|
-![](images/query_image.png)  |  ![](images/target_image.png)  | ![](images/smash_box_art.png)
+<img src='images/query_image.png' width=200>  |  <img src='images/target_image.png' width=250>  | <img src='images/smash_box_art.png' width=200>
 
 #### Output
-
-![](readme/example.png)
+<p align='center'>
+  <img src='readme/example.png' width=350>
+</p>
