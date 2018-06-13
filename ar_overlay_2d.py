@@ -48,7 +48,9 @@ class AR2D:
             if m.distance < 0.7 * n.distance:
                 good_matches.append(m)
 
-        if len(good_matches) > self.min_match_count:
+        print('matches found: {}'.format(len(good_matches)))
+
+        if len(good_matches) >= self.min_match_count:
             # subset all matched points
             src_pts = np.float32([self.query_kps[m.queryIdx].pt for m in good_matches]).reshape(-1, 1, 2)
             dst_pts = np.float32([target_kps[m.trainIdx].pt for m in good_matches]).reshape(-1, 1, 2)
@@ -69,7 +71,7 @@ class AR2D:
 
         else:
             # return unchanged target image if query image not found
-            print("Not enough matches are found - %d/%d" % (len(good_matches), self.min_match_count))
+            print('Not enough matches are found - {}/{}'.format(len(good_matches), self.min_match_count))
             result = target_image
 
         return result
