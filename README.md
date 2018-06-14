@@ -10,14 +10,14 @@ Find a `query_image` in a `target_image` and do best to replace found query with
 
 #### Inputs
 
-`query_image`                | `target_image` (live webcam feed)                 | `ar_image`
+`query_image`                | `target_image`                 | `ar_image`
 :---------------------------:|:------------------------------:|:--------------|
-<img src='images/office_pic.png' width=200>  |  <img src='readme/office_noar.png' width=250>  | <img src='images/smash_box_art.png' width=200>
+<img src='images/crossword_query.png' width=200>  |  <h4>Live Webcam Feed</h4>  | <img src='images/smash_box_art.png' width=200>
 
 #### Output
 
 <p align='center'>
-  <img src='readme/ar2d_office.gif' width=350>
+  <img src='readme/crossword_replace.gif' width=350>
 </p>
 
 
